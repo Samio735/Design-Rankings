@@ -17,6 +17,7 @@ html { font-family: 'Inter', sans-serif; font-weight:bold; }
 }
 
 .container{
+
     position: absolute;
     left: 0;
     top: 0;
@@ -30,13 +31,15 @@ html { font-family: 'Inter', sans-serif; font-weight:bold; }
 }
 
 .design{
+    transform: scale(0%);
+
     margin-top: 4em;
     opacity: 98%;
     width: 90%;
     height: auto;
 margin-top: 0;
     animation: design 6s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
-    
+    animation-delay: 1s;
 }
 
 
@@ -73,7 +76,7 @@ margin-top: 0;
     margin-top: 0;
     animation: member 6s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
 
-    animation-delay: 7s;
+    animation-delay: 6s;
     transform: scale(0%);
 }
 
@@ -123,8 +126,8 @@ margin-top: 0;
 }
 .bigContainer{
     transform: scale(0%);
-    animation: ranks 3s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
-    animation-delay: 12s;
+    animation: ranks 4s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
+    animation-delay: 10s;
     position: absolute;
     top: 0;
     left: 0;
@@ -168,7 +171,7 @@ margin-top: 0;
 
     width: 80vw;
     height: 90vh;
- 
+    margin-top: 2em;
     display: flex;
     align-items: space-between ;
     justify-content: space-between;
@@ -229,7 +232,10 @@ margin-top: 0;
 }
 .Tier1{
 
-
+height: 10vh;
+display: flex;
+align-items: center;
+justify-content: center;
     border-radius: 2em;
     background:  linear-gradient(279.96deg, rgba(255, 236, 69, 0.96) 0%, rgba(254, 237, 86, 0.62) 128.74%);
     text-align: center;
@@ -238,6 +244,11 @@ margin-top: 0;
   
 }
 .Tier2{
+
+height: 10vh;
+display: flex;
+align-items: center;
+justify-content: center;
     margin-bottom: 0.5em;
     border-radius: 2em;
     background:  #C7354A;
@@ -247,6 +258,11 @@ margin-top: 0;
   
 }
 .Tier3{
+
+height: 10vh;
+display: flex;
+align-items: center;
+justify-content: center;
     margin-bottom: 0.5em;
     border-radius: 2em;
     background:  #682356;
@@ -257,6 +273,11 @@ margin-top: 0;
   
 }
 .Tier4{
+
+height: 10vh;
+display: flex;
+align-items: center;
+justify-content: center;
     margin-bottom: 0.5em;
     border-radius: 2em;
     background:  #1A2849;
