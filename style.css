@@ -439,17 +439,20 @@ justify-content: center;
   }
 
   .logo{
-    transform: scale(0%);
-    width: 20em;
+    display: unset;
+    transform: scale(00%);
+    width: 15em;
+    mix-blend-mode: color-dodge;
     animation: logo 6s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
     animation-delay: 9s;
+    z-index: -100;
   }
     @keyframes logo {
     0%{
     
         opacity: 0%;
         margin-top: -2%;
-        transform: scale(0%);
+
     }
     25%{
  
@@ -459,7 +462,7 @@ justify-content: center;
         opacity: 98%;
     }
     100%{
-       margin-top: 17em;
+       margin-top: 45em;
         transform: scale(100%);
         
         opacity: 98%;
