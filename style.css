@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    height: 100%; overflow: hidden
 }
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; font-weight:bold; }
@@ -12,8 +13,10 @@ html { font-family: 'Inter', sans-serif; font-weight:bold; }
     align-items: center;
     z-index: -200;
     margin: 0;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden
 }
 
 .container{
@@ -127,7 +130,7 @@ margin-top: 0;
 .bigContainer{
     transform: scale(0%);
     animation: ranks 4s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
-    animation-delay: 10s;
+    animation-delay: 0s;
     position: absolute;
     top: 0;
     left: 0;
@@ -186,12 +189,62 @@ margin-top: 0;
     background:  rgba(255, 255, 255,0.8);
 
     backdrop-filter: blur(4px);
-    border: 1px solid #68f7ff;
-    box-shadow: 1px 1px 0px #65deee;
+    border: 1px solid #5284e2;
     border-radius: 3em;
 
 }
+.allTier1{
+    margin-top: 5.8em;
+    width: inherit;
+    MARGIN-LEFT: 0.5EM;
+    MARGIN-RIGHT: 0.5EM;
+    box-sizing: border-box;
+    background:  rgba(255, 255, 255,0.8);
 
+    backdrop-filter: blur(4px);
+    border: 1px solid #5284e2;
+    border-radius: 3em;
+
+}
+.allTier2{
+    margin-top: 5.8em;
+    width: inherit;
+    MARGIN-LEFT: 0.5EM;
+    MARGIN-RIGHT: 0.5EM;
+    box-sizing: border-box;
+    background:  rgba(255, 255, 255,0.8);
+
+    backdrop-filter: blur(4px);
+    border: 1px solid #5284e2;
+    border-radius: 3em;
+
+}
+.allTier3{
+    margin-top: 5.8em;
+    width: inherit;
+    MARGIN-LEFT: 0.5EM;
+    MARGIN-RIGHT: 0.5EM;
+    box-sizing: border-box;
+    background:  rgba(255, 255, 255,0.8);
+
+    backdrop-filter: blur(4px);
+    border: 1px solid #5284e2;
+    border-radius: 3em;
+
+}
+.allTier4{
+    margin-top: 5.8em;
+    width: inherit;
+    MARGIN-LEFT: 0.5EM;
+    MARGIN-RIGHT: 0.5EM;
+    box-sizing: border-box;
+    background:  rgba(255, 255, 255,0.8);
+
+    backdrop-filter: blur(4px);
+    border: 1px solid #5284e2;
+    border-radius: 3em;
+
+}
 .names{
     width: inherit;
     MARGIN-LEFT: 0.5EM;
@@ -295,4 +348,121 @@ justify-content: center;
     color: rgb(23, 23, 23);
     font-size: 2rem;
     margin: 0;
+}
+.logo{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .bigContainer{
+        animation-delay: 7s;
+    }
+    .smallContainer{
+        height: 60vh;
+    }
+    .smallContainer2{
+        height: 60vh;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .name{
+        margin: 0.5em 0;
+    }
+    .Tier1{
+        height: 3em;
+        margin: 1.2em 0;
+    }    .Tier2{
+        height: 3em;
+        margin: 1.2em 0;
+    }
+    .Tier3{
+        height: 3em;
+        margin: 1.2em 0;
+    }
+    .Tier4{
+        height: 3em;
+        margin: 1.2em 0;
+    }
+
+    .design{
+        animation-delay: 0.5s;
+    }
+
+    .member{
+        animation-delay: 3s;
+    }
+    @keyframes design {
+        0%{
+           
+            opacity: 0%;
+            margin-top: -2%;
+            transform: scale(0%);
+            transition: ease-in;
+    
+        }
+        25%{
+            opacity: 98%;
+        }
+    
+        90%{
+            opacity: 98%;
+        }
+        100%{
+            transition: ease-in;
+            margin-top: -43em;
+            transform: scale(100%);
+            
+            opacity: 98%;
+        }
+    }
+    @keyframes member {
+        0%{
+        
+            opacity: 0%;
+            margin-top: -2%;
+            transform: scale(0%);
+        }
+        25%{
+     
+            opacity: 97%;
+        }
+        90%{
+            opacity: 98%;
+        }
+        100%{
+            margin-top: -35em;
+            transform: scale(100%);
+            
+            opacity: 98%;
+        }
+  }
+
+  .logo{
+    transform: scale(0%);
+    width: 20em;
+    animation: logo 6s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
+    animation-delay: 9s;
+  }
+    @keyframes logo {
+    0%{
+    
+        opacity: 0%;
+        margin-top: -2%;
+        transform: scale(0%);
+    }
+    25%{
+ 
+        opacity: 97%;
+    }
+    90%{
+        opacity: 98%;
+    }
+    100%{
+       margin-top: 17em;
+        transform: scale(100%);
+        
+        opacity: 98%;
+    }
+}
 }
