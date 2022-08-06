@@ -10,5 +10,7 @@ play.addEventListener('click',start)
 function start() {
     body.setAttribute('class','inGame')
     audio.setAttribute('autoplay','true')
+    audio.volume = 0.2;
     audio.load()
+    
 }
