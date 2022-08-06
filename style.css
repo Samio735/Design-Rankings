@@ -3,7 +3,35 @@ body{
     height: 100%; overflow: hidden
 }
 @import url('https://rsms.me/inter/inter.css');
+
 html { font-family: 'Inter', sans-serif; font-weight:bold; }
+.play{
+    width: 30vw;
+    max-width: 15em;
+    transition: 0.2s ease-in-out;
+}
+.container{
+    display: none;
+}
+
+ .bigContainer{
+    display: none;
+}
+ .logo{
+    display: none;
+ }
+
+
+.inGame .play{
+    display: none;
+}
+.play:hover{
+    scale: 1.2;
+}
+
+.play:active{
+    scale: 1.2;
+}
 .viddiv{
     position: absolute;
     top: 0;
@@ -19,7 +47,20 @@ html { font-family: 'Inter', sans-serif; font-weight:bold; }
     overflow: hidden
 }
 
-.container{
+.inGame .container{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
 
     position: absolute;
     left: 0;
@@ -33,9 +74,8 @@ html { font-family: 'Inter', sans-serif; font-weight:bold; }
     align-items: center;
 }
 
-.design{
-    transform: scale(0%);
-
+.inGame .design{
+   transform: scale(0);
     margin-top: 4em;
     opacity: 98%;
     width: 90%;
@@ -51,7 +91,7 @@ margin-top: 0;
        
         opacity: 0%;
         margin-top: -2%;
-        transform: scale(0%);
+        transform: scale(0);
         transition: ease-in;
 
     }
@@ -65,13 +105,13 @@ margin-top: 0;
     100%{
         transition: ease-in;
         margin-top: -70em;
-        transform: scale(800%);
+        transform: scale(8);
         
         opacity: 0%;
     }
 
 }
-.member{
+.inGame .member{
      margin-top: 4em;
     opacity: 98%;
     width: 90%;
@@ -80,7 +120,7 @@ margin-top: 0;
     animation: member 6s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
 
     animation-delay: 6s;
-    transform: scale(0%);
+    transform: scale(0);
 }
 
 @keyframes member {
@@ -88,7 +128,7 @@ margin-top: 0;
     
         opacity: 0%;
         margin-top: -2%;
-        transform: scale(0%);
+        transform: scale(0);
     }
     25%{
  
@@ -99,7 +139,7 @@ margin-top: 0;
     }
     100%{
         margin-top: -40em;
-        transform: scale(800%);
+        transform: scale(8);
         
         opacity: 0%;
     }
@@ -111,7 +151,7 @@ margin-top: 0;
     
         opacity: 0%;
         margin-top: -3%;
-        transform: scale(0%);
+        transform: scale(0);
     }
     25%{
  
@@ -122,13 +162,14 @@ margin-top: 0;
     }
     100%{
  
-        transform: scale(100%);
+        transform: scale(1);
         
   
     }
 }
-.bigContainer{
-    transform: scale(0%);
+
+.inGame .bigContainer{
+    transform: scale(0);
     animation: ranks 4s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
     animation-delay: 10s;
     position: absolute;
@@ -144,7 +185,7 @@ margin-top: 0;
         height: 100vh;
       
     }
-    .bigContainer2{
+    .inGame .bigContainer2{
         position: absolute;
         top: 0;
         left: 0;
@@ -159,7 +200,7 @@ margin-top: 0;
           
         }
             
-.smallContainer{
+        .inGame .smallContainer{
   
     width: 80vw;
     height: 90vh;
@@ -170,7 +211,7 @@ margin-top: 0;
     align-content: center
 }
 
-.smallContainer2{
+.inGame .smallContainer2{
 
     width: 80vw;
     height: 90vh;
@@ -180,7 +221,7 @@ margin-top: 0;
     justify-content: space-between;
     align-content: center
 }
-.allTier{
+.inGame .allTier{
     margin-top: 5.8em;
     width: inherit;
     MARGIN-LEFT: 0.5EM;
@@ -193,7 +234,7 @@ margin-top: 0;
     border-radius: 3em;
 
 }
-.allTier1{
+.inGame .allTier1{
     margin-top: 5.8em;
     width: inherit;
     MARGIN-LEFT: 0.5EM;
@@ -206,7 +247,7 @@ margin-top: 0;
     border-radius: 3em;
 
 }
-.allTier2{
+.inGame .allTier2{
     margin-top: 5.8em;
     width: inherit;
     MARGIN-LEFT: 0.5EM;
@@ -219,7 +260,7 @@ margin-top: 0;
     border-radius: 3em;
 
 }
-.allTier3{
+.inGame .allTier3{
     margin-top: 5.8em;
     width: inherit;
     MARGIN-LEFT: 0.5EM;
@@ -232,7 +273,7 @@ margin-top: 0;
     border-radius: 3em;
 
 }
-.allTier4{
+.inGame .allTier4{
     margin-top: 5.8em;
     width: inherit;
     MARGIN-LEFT: 0.5EM;
@@ -245,7 +286,7 @@ margin-top: 0;
     border-radius: 3em;
 
 }
-.names{
+.inGame .names{
     width: inherit;
     MARGIN-LEFT: 0.5EM;
     MARGIN-RIGHT: 0.5EM;
@@ -254,7 +295,7 @@ margin-top: 0;
     justify-content: space-evenly;
 }
 
-.name{
+.inGame  .name{
 
     border-radius: 1em;
     margin: 0.5em;
@@ -353,43 +394,48 @@ justify-content: center;
     display: none;
 }
 
+
+
+
+
+
 @media screen and (max-width: 900px) {
-    .bigContainer{
-        animation-delay: 7s;
+    .inGame  .bigContainer{
+        animation-delay: 9s;
     }
-    .smallContainer{
+    .inGame   .smallContainer{
         height: 60vh;
     }
-    .smallContainer2{
+    .inGame  .smallContainer2{
         height: 60vh;
     }
     p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
-    .name{
+    .inGame  .name{
         margin: 0.5em 0;
     }
     .Tier1{
         height: 3em;
-        margin: 1.2em 0;
+        margin: 2em 0;
     }    .Tier2{
         height: 3em;
-        margin: 1.2em 0;
+        margin: 2em 0;
     }
     .Tier3{
         height: 3em;
-        margin: 1.2em 0;
+        margin: 2em 0;
     }
     .Tier4{
         height: 3em;
-        margin: 1.2em 0;
+        margin: 2em 0;
     }
 
     .design{
         animation-delay: 0.5s;
     }
 
-    .member{
+    .inGame  .member{
         animation-delay: 3s;
     }
     @keyframes design {
@@ -397,7 +443,7 @@ justify-content: center;
            
             opacity: 0%;
             margin-top: -2%;
-            transform: scale(0%);
+            transform: scale(0);
             transition: ease-in;
     
         }
@@ -410,8 +456,8 @@ justify-content: center;
         }
         100%{
             transition: ease-in;
-            margin-top: -43em;
-            transform: scale(100%);
+            margin-top: -32em;
+            transform: scale(1);
             
             opacity: 98%;
         }
@@ -419,53 +465,53 @@ justify-content: center;
     @keyframes member {
         0%{
         
-            opacity: 0%;
+            opacity: 0;
             margin-top: -2%;
-            transform: scale(0%);
+            transform: scale(0);
         }
         25%{
      
             opacity: 97%;
         }
         90%{
-            opacity: 98%;
+            opacity: 0.98;
         }
         100%{
-            margin-top: -35em;
-            transform: scale(100%);
+            margin-top: -25em;
+            transform: scale(1);
             
-            opacity: 98%;
+            opacity: 0.98;
         }
   }
 
-  .logo{
+  .inGame .logo{
     display: unset;
-    transform: scale(00%);
-    width: 15em;
+    transform: scale(0);
+    width: 10em;
     mix-blend-mode: color-dodge;
-    animation: logo 6s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
-    animation-delay: 9s;
+    animation: logo 2s 1 cubic-bezier(0.56, 0.02, 0.87, 0.27) forwards;
+    animation-delay: 12s;
     z-index: -100;
   }
     @keyframes logo {
     0%{
     
-        opacity: 0%;
-        margin-top: -2%;
+        opacity: 0;
+        margin-bottom: -16em;
 
     }
     25%{
  
-        opacity: 97%;
+        opacity: 0.37;
     }
     90%{
-        opacity: 98%;
+        opacity: 0.88;
     }
     100%{
-       margin-top: 45em;
-        transform: scale(100%);
+       margin-bottom: 0em;
+        transform: scale(1);
         
-        opacity: 98%;
+        opacity: 0.94;
     }
 }
 }
